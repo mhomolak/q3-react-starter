@@ -2,13 +2,16 @@ import React, { Component } from 'react'
 
 import sayMessage from '../helpers/say_message'
 
+speechSynthesis.getVoices().forEach(function(voice) {
+   console.log(voice.name, voice.default ? '(default)' :''); });
+
 class SpeakBox extends Component {
   getInputText(ref){
     this.message = ref
   }
   sayIt(e){
     e.preventDefault();
-    sayMessage(this.message.value, 'Fred');
+    sayMessage(this.message.value, 'Bruce');
     this.message.value = null;
   }
   render(){

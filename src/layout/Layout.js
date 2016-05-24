@@ -1,14 +1,14 @@
 import React from 'react'
 
 import NavHeader from './NavHeader'
-import SpeakBox from '../components/SpeakBox';
 
-const Layout = () => (
-  <div> 
-    
+const Layout = (props) => (
+  <div>
+
     <NavHeader />
-    <SpeakBox />
-  
+
+      { props.children }
+
   </div>
 );
 
