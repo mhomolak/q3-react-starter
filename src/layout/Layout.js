@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 
 
 import IconLink from './IconLink'
@@ -8,7 +9,6 @@ const Layout = (props) => (
 
     <IconLink pathTo={"/"} title={'Home'}/>
     <IconLink pathTo={"/about"} title={'About'}/>
-
     <main>
       {props.children}
     </main>
