@@ -1,16 +1,19 @@
 import React from 'react'
 
-import NavHeader from './NavHeader'
+
+import IconLink from './IconLink'
 
 const Layout = (props) => (
-  <div>
+  <div className="container-fluid">
 
-    <NavHeader />
+    <IconLink pathTo={"/"} title={'Home'}/>
+    <IconLink pathTo={"/about"} title={'About'}/>
 
-      { props.children }
+    <main>
+      {props.children}
+    </main>
 
   </div>
 );
-
 
 export default Layout
